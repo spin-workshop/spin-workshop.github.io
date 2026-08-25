@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SPIN @ CoRL 2026 — Structured Physical Intelligence</title>
+    <meta
+      name="description"
+      content="The 1st Workshop on Structured Physical Intelligence (SPIN) at CoRL 2026, Austin, Texas, November 12, 2026."
+    />
+    <meta property="og:title" content="SPIN @ CoRL 2026 — Structured Physical Intelligence" />
+    <meta
+      property="og:description"
+      content="The 1st Workshop on Structured Physical Intelligence (SPIN) at CoRL 2026, Austin, Texas, November 12, 2026."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#overview">Skip to content</a>
+
+    <nav class="nav" aria-label="Sections">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#contest">Competition</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#papers">Call for Papers</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+      </ul>
+    </nav>
+
+    <header class="masthead" id="top">
+      <h1>1st Workshop on Structured Physical Intelligence (SPIN)</h1>
+      <p class="tagline">Does physical intelligence need structure?</p>
+      <p class="meta">
+        <strong>CoRL 2026 &nbsp;|&nbsp; Austin, Texas, USA &nbsp;|&nbsp; November 12, 2026</strong>
+      </p>
+      <img
+        class="banner"
+        src="assets/spin-banner.webp"
+        alt="Line drawing of a robot deep in thought. Its thought bubbles show a hand drilling into a plank, a hand stirring a pot on a stove, hands chopping vegetables at a counter, and legs walking down a city street past cyclists and parked cars. Beside it, a robot arm sorts a bottle into a recycling bin."
+      />
+    </header>
+
+    <main class="container">
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>
+          <b>What does it take to achieve the physical intelligence of a five-year-old?</b> Children learn to
+          manipulate new objects and generalize skills from only a handful of interactions. Despite rapid progress in
+          vision and language, today&rsquo;s robots remain far less data-efficient and lack comparably rich training data.
+        </p>
+        <p>
+          Structured Physical Intelligence (SPIN) asks how physical priors and structured world representations can
+          close this gap. Relevant approaches include Visual-Language-Action models (VLAs), world models, object-centric
+          and compositional representations, affordances, and particle-based models. Robotics provides a direct test of
+          whether these ideas support efficient generalization across locomotion, dexterous manipulation, hierarchical
+          control, and few-shot learning.
+        </p>
+        <p>
+          The workshop brings researchers together to examine recent advances, current limitations, and open problems
+          through contributed papers, invited talks, a panel discussion, and a live dexterous manipulation competition.
+        </p>
+      </section>
+
+      <section id="questions">
+        <h2>Research Questions</h2>
+        <p>
+          This half-day workshop is organized around five questions spanning structure, representation, learning, and
+          evaluation for physical agents:
+        </p>
+        <ul>
+          <li>
+            <b>Q1 &mdash; What structure enables data-efficient physical intelligence?</b> How can developmental and
+            cognitive theories of human physical knowledge inspire structured representations in robotics, and which of
+            those inductive biases actually pay off in practice?
+          </li>
+          <li>
+            <b>Q2 &mdash; How should physical agents represent the world?</b> Object-centric models, compositional
+            structure, affordances and object interactions, particle motion representations, and multimodal grounding
+            each propose a different answer. Which representations best support perception, prediction, and action?
+          </li>
+          <li>
+            <b>Q3 &mdash; What should be built in, and what should emerge from scale?</b> How should engineered
+            structural priors interact with self-supervised learning, joint-embedding predictive architectures, VLAs,
+            and world models as data and model size grow?
+          </li>
+          <li>
+            <b>Q4 &mdash; How can structured models generalize and adapt?</b> What enables parameter-efficient
+            fine-tuning, prompting, adapters, multi-task and continual learning, and transfer across tasks,
+            environments, and robot embodiments?
+          </li>
+          <li>
+            <b>Q5 &mdash; How should progress be understood and evaluated?</b> Which benchmarks and mechanistic
+            interpretability methods reveal whether a model truly reasons about physical interactions, dynamics, and
+            failure?
+          </li>
+        </ul>
+      </section>
+
+      <section id="contest">
+        <h2>The Child&ndash;Robot Dexterity Challenge</h2>
+        <p class="note">How do today&rsquo;s robots compare with a child on everyday manipulation tasks?</p>
+        <figure>
+          <img
+            src="assets/robot-child-comparison.webp"
+            alt="Side by side: a robot gripper and a child's hands assembling matching wooden parts"
+          />
+          <figcaption>
+            Same task, two kinds of physical intelligence. Image is placeholder material pending final permissions and
+            credits.
+          </figcaption>
+        </figure>
+        <p>
+          A child can quickly pick up, turn, stack, and insert unfamiliar objects. This competition invites robotic
+          systems to attempt the same kinds of tasks, creating a clear and constructive benchmark for current progress
+          in dexterous manipulation. It is open to all researchers, students, and practitioners from academia and
+          industry.
+        </p>
+
+        <h3>How it works</h3>
+        <p>
+          The competition will feature 10 dexterous manipulation tasks using familiar objects. Each task will be
+          selected so that it can be completed by a child, providing an intuitive point of comparison for today&rsquo;s
+          robotic systems.
+        </p>
+
+        <h3>Key dates and participation details</h3>
+        <ul>
+          <li>
+            <b>Final task list:</b> TBD. Examples may include picking up a small object, untwisting a bottle cap,
+            inserting an object into a matching opening, building towers, and rotating a face of a Rubik&rsquo;s cube.
+          </li>
+          <li><b>Competition launch:</b> TBD</li>
+          <li><b>Registration deadline:</b> TBD</li>
+        </ul>
+
+        <h3>Hardware</h3>
+        <p>
+          We will provide hardware for participants to use. Platform details will be announced. Teams and participants
+          are also encouraged to bring their own identical hardware, subject to approval.
+        </p>
+
+        <h3>Evaluation</h3>
+        <p>
+          On the day of the competition, every task will be evaluated against its own clearly defined success
+          criterion. A panel of neutral judges will assess each attempt consistently, and each system&rsquo;s performance
+          will be compared task by task with the child&rsquo;s performance on the same activities. The detailed judging
+          procedure, number of attempts, and reporting format are TBD.
+        </p>
+        <p>
+          The goal is to produce a transparent, constructive view of current capabilities across a varied set of
+          everyday tasks and to identify promising directions for future research.
+        </p>
+      </section>
+
+      <section id="speakers">
+        <h2>Speakers</h2>
+        <p class="note">
+          All four invited speakers are committed, and will also join the panel discussion.
+        </p>
+        <div class="speakers">
+          <article>
+            <img src="assets/portraits/mike-rabbat.jpg" alt="Mike Rabbat" loading="lazy" />
+            <h3><a href="https://ca.linkedin.com/in/michael-rabbat-66a00b7">Mike Rabbat</a></h3>
+            <p class="aff">AMI Labs</p>
+            <p class="status">Speaker &amp; panelist</p>
+            <p class="talk">Talk title to be announced</p>
+          </article>
+          <article>
+            <img src="assets/portraits/jeannette-bohg.jpg" alt="Jeannette Bohg" loading="lazy" />
+            <h3><a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a></h3>
+            <p class="aff">Stanford University</p>
+            <p class="status">Speaker &amp; panelist</p>
+            <p class="talk">Talk title to be announced</p>
+          </article>
+          <article>
+            <img src="assets/portraits/yunzhu-li.jpg" alt="Yunzhu Li" loading="lazy" />
+            <h3><a href="https://yunzhuli.github.io/">Yunzhu Li</a></h3>
+            <p class="aff">Columbia University</p>
+            <p class="status">Speaker &amp; panelist</p>
+            <p class="talk">Talk title to be announced</p>
+          </article>
+          <article>
+            <img src="assets/portraits/georgia-chalvatzaki.jpg" alt="Georgia Chalvatzaki" loading="lazy" />
+            <h3><a href="https://www.ias.informatik.tu-darmstadt.de/Team/GeorgiaChalvatzaki">Georgia Chalvatzaki</a></h3>
+            <p class="aff">TU Darmstadt</p>
+            <p class="status">Speaker &amp; panelist</p>
+            <p class="talk">Talk title to be announced</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="schedule">
+        <h2>Schedule</h2>
+        <p class="note">Tentative morning half-day schedule, in person.</p>
+        <table>
+          <tbody>
+            <tr>
+              <td class="time">8:30</td>
+              <td><b>Welcome</b> &mdash; opening remarks (10 min)</td>
+            </tr>
+            <tr>
+              <td class="time">8:40</td>
+              <td><b>Keynote Talk 1</b> &mdash; 25 min + 5 min Q&amp;A</td>
+            </tr>
+            <tr>
+              <td class="time">9:10</td>
+              <td><b>Keynote Talk 2</b> &mdash; 25 min + 5 min Q&amp;A</td>
+            </tr>
+            <tr>
+              <td class="time">9:40</td>
+              <td><b>Poster session + coffee break</b> &mdash; 40 min</td>
+            </tr>
+            <tr>
+              <td class="time">10:20</td>
+              <td><b>Keynote Talk 3</b> &mdash; 25 min + 5 min Q&amp;A</td>
+            </tr>
+            <tr>
+              <td class="time">10:50</td>
+              <td><b>Keynote Talk 4</b> &mdash; 25 min + 5 min Q&amp;A</td>
+            </tr>
+            <tr>
+              <td class="time">11:20</td>
+              <td>
+                <b>The Child&ndash;Robot Dexterity Challenge</b> &mdash; 40 min
+              </td>
+            </tr>
+            <tr>
+              <td class="time">12:00</td>
+              <td>
+                <b>Panel: What is Next in Structured Physical Intelligence Models?</b> &mdash; 45 min, moderated by Amir
+                Bar, with audience Q&amp;A
+              </td>
+            </tr>
+            <tr>
+              <td class="time">12:45</td>
+              <td><b>Concluding remarks</b> &mdash; 5 min</td>
+            </tr>
+            <tr>
+              <td class="time">12:50</td>
+              <td><b>Adjourn</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="papers">
+        <h2>Call for Papers</h2>
+        <p>
+          We invite submissions on Structured Physical Intelligence and related approaches to representation, learning,
+          reasoning, and control for physical agents. Topics include, but are not limited to:
+        </p>
+        <ul>
+          <li>Cognitive science foundations of physical intelligence</li>
+          <li>Visual-Language-Action models (VLAs) with structured representations</li>
+          <li>Structured world models for physical reasoning, prediction, and planning</li>
+          <li>Joint-embedding predictive architectures and self-supervised world models</li>
+          <li>Data and model scaling in robotic foundation models</li>
+          <li>Multimodal grounding for robotic foundation models</li>
+          <li>Object-centric models for robotics</li>
+          <li>Compositionality and reasoning techniques</li>
+          <li>Object interactions, affordances, and motion dynamics for robotics</li>
+          <li>Generative models for robotics (e.g., text-to-image/video/3D generation)</li>
+          <li>Efficient training and inference of VLAs and world models</li>
+          <li>Parameter-efficient fine-tuning, prompting, and adapters for robotic foundation models</li>
+          <li>Generalization of VLAs and world models to other domains</li>
+          <li>Multi-task and continual learning for VLAs and world models</li>
+          <li>Mechanistic interpretability of VLAs and world models</li>
+        </ul>
+
+        <h3>Submission Guidelines</h3>
+        <ul>
+          <li>
+            <b>Eligibility:</b> Full papers (4&ndash;8 pages), accepted CoRL 2026 submissions, and extended abstracts (2
+            pages). We welcome submissions that are under review or were recently published.
+          </li>
+          <li>
+            <b>Formatting:</b> Authors should use the
+            <a href="https://www.corl.org/contributions/instruction-for-authors">CoRL 2026 paper template</a>.
+          </li>
+          <li>
+            <b>Review and Presentation:</b> Submitting authors will be asked to serve on the program committee. Accepted
+            papers will be presented in person during the poster session.
+          </li>
+          <li><b>Publication:</b> This workshop is non-archival.</li>
+          <li>
+            <b>Best Paper Award:</b> Strong submissions will be recommended during review, and a Best Paper will be
+            selected by the workshop chairs.
+          </li>
+          <li><b>Submission Link:</b> To be announced.</li>
+        </ul>
+
+        <h3>Important Dates</h3>
+        <p class="small">All deadlines are tentative and subject to change.</p>
+        <table>
+          <tbody>
+            <tr>
+              <td class="when">Paper submission deadline</td>
+              <td>August 27, 2026</td>
+            </tr>
+            <tr>
+              <td class="when">Notification to authors</td>
+              <td>September 11, 2026</td>
+            </tr>
+            <tr>
+              <td class="when">Camera-ready deadline</td>
+              <td>September 18, 2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="organizers">
+        <h2>Organizers</h2>
+        <div class="people">
+          <article>
+            <img src="assets/portraits/roei-herzig.jpg" alt="Roei Herzig" loading="lazy" />
+            <div>
+              <strong><a href="https://roeiherz.github.io/">Roei Herzig</a></strong>
+              <span>UC Berkeley</span>
+              <span class="role">Primary contact</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/amir-bar.jpg" alt="Amir Bar" loading="lazy" />
+            <div>
+              <strong><a href="https://www.amirbar.net/">Amir Bar</a></strong>
+              <span>Imperial College London</span>
+              <span class="role">Primary contact &middot; Panel chair</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/carlo-sferrazza.jpg" alt="Carlo Sferrazza" loading="lazy" />
+            <div>
+              <strong><a href="https://sferrazza.cc/">Carlo Sferrazza</a></strong>
+              <span>UT Austin</span>
+              <span class="role">Primary contact</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/dantong-niu.jpg" alt="Dantong Niu" loading="lazy" />
+            <div>
+              <strong>Dantong Niu</strong>
+              <span>UC Berkeley</span>
+              <span class="role">Program chair</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/jiachen-zhu.jpg" alt="Jiachen Zhu" loading="lazy" />
+            <div>
+              <strong><a href="https://jiachenzhu.github.io/">Jiachen Zhu</a></strong>
+              <span>Skild AI</span>
+              <span class="role">Program chair</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/michael-cho.jpg" alt="Michael Cho" loading="lazy" />
+            <div>
+              <strong><a href="https://www.linkedin.com/in/michael-chung-yeung-cho">Michael Cho</a></strong>
+              <span>FrodoBots</span>
+              <span class="role">Program chair</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/zhi-wang.jpg" alt="Zhi (Leo) Wang" loading="lazy" />
+            <div>
+              <strong><a href="https://tx-leo.github.io/">Zhi (Leo) Wang</a></strong>
+              <span>University of Maryland</span>
+              <span class="role">Program chair</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/arthur-allshire.jpg" alt="Arthur Allshire" loading="lazy" />
+            <div>
+              <strong><a href="https://allshire.org/">Arthur Allshire</a></strong>
+              <span>UC Berkeley</span>
+              <span class="role">Program chair</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/james-ni.jpg" alt="James Ni" loading="lazy" />
+            <div>
+              <strong><a href="https://jaynye.github.io/">James Ni</a></strong>
+              <span>Georgia Tech</span>
+              <span class="role">Program chair</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/anthony-liang.jpg" alt="Anthony Liang" loading="lazy" />
+            <div>
+              <strong><a href="https://aliang8.github.io/">Anthony Liang</a></strong>
+              <span>University of Southern California</span>
+              <span class="role">Program chair</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/abrar-anwar.jpg" alt="Abrar Anwar" loading="lazy" />
+            <div>
+              <strong><a href="https://abraranwar.github.io/">Abrar Anwar</a></strong>
+              <span>University of Southern California</span>
+              <span class="role">Program chair</span>
+            </div>
+          </article>
+        </div>
+
+        <h3>Advisory Board</h3>
+        <div class="people">
+          <article>
+            <img src="assets/portraits/jitendra-malik.jpg" alt="Jitendra Malik" loading="lazy" />
+            <div>
+              <strong><a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a></strong>
+              <span>UC Berkeley</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/trevor-darrell.jpg" alt="Trevor Darrell" loading="lazy" />
+            <div>
+              <strong><a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a></strong>
+              <span>UC Berkeley</span>
+            </div>
+          </article>
+          <article>
+            <img src="assets/portraits/yann-lecun.jpg" alt="Yann LeCun" loading="lazy" />
+            <div>
+              <strong>Yann LeCun</strong>
+              <span>AMI Labs / NYU</span>
+            </div>
+          </article>
+        </div>
+
+        <h3>Contact</h3>
+        <p class="small">
+          Questions about the workshop can go to
+          <a href="mailto:roeiherz@gmail.com">roeiherz@gmail.com</a>,
+          <a href="mailto:amirb4r@gmail.com">amirb4r@gmail.com</a>, or
+          <a href="mailto:csferrazza@berkeley.edu">csferrazza@berkeley.edu</a>.
+        </p>
+      </section>
+
+      <section id="sponsors">
+        <h2>Sponsors</h2>
+        <p class="note">Sponsor logos and acknowledgements will be added here.</p>
+      </section>
+    </main>
+
+    <footer>SPIN &middot; 1st Workshop on Structured Physical Intelligence &middot; CoRL 2026, Austin, Texas</footer>
+  </body>
+</html>

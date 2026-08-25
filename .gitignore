@@ -1,0 +1,19 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local configuration and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Design sources and reference material are not part of the published site.
+/references/
+/design.md
+/proposal.pdf
+/proposal.txt
