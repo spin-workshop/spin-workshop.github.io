@@ -318,6 +318,53 @@ figcaption {
   font-weight: 600;
 }
 
+/* Sponsors --------------------------------------------------------------- */
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 48px;
+}
+
+.sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  min-height: 100px;
+  padding: 26px 34px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.sponsor:hover {
+  border-color: var(--accent);
+}
+
+.sponsor img {
+  width: 193px;
+  max-height: 54px;
+}
+
+.sponsor--frodobots {
+  gap: 12px;
+}
+
+.sponsor--frodobots img {
+  width: 49px;
+  height: 29px;
+}
+
+.sponsor--frodobots span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
 /* Tables ----------------------------------------------------------------- */
 
 table {
