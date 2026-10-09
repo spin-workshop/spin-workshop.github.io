@@ -325,7 +325,7 @@ figcaption {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 24px 48px;
+  gap: 24px 32px;
 }
 
 .sponsor {
