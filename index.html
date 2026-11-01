@@ -16,8 +16,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="og.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.svg?v=grasp-1" type="image/svg+xml" sizes="any" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="speaker-talks.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#overview">Skip to content</a>
@@ -183,11 +184,44 @@
           </article>
           <article>
             <img src="assets/portraits/yunzhu-li.jpg" alt="Yunzhu Li" loading="lazy" />
-            <h3><a href="https://yunzhuli.github.io/">Yunzhu Li</a></h3>
+            <h3 class="speaker-name">
+              <a href="https://yunzhuli.github.io/">Yunzhu Li</a>
+              <button
+                class="speaker-talk-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="yunzhu-li-abstract"
+                aria-label="Talk details for Yunzhu Li"
+              >
+                <span class="talk-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
             <p class="aff">Columbia University</p>
             <p class="status">Speaker</p>
-            <p class="talk">Talk title to be announced</p>
+            <p class="talk">Structured World Models as Scalable Data Engines for Robotics</p>
           </article>
+          <div
+            class="speaker-talk-panel"
+            id="yunzhu-li-abstract"
+            role="region"
+            aria-labelledby="yunzhu-li-talk-title"
+            inert
+          >
+            <div class="speaker-talk-panel-content">
+              <div class="speaker-talk-box">
+                <p class="speaker-talk-byline">Yunzhu Li</p>
+                <h3 id="yunzhu-li-talk-title">Structured World Models as Scalable Data Engines for Robotics</h3>
+                <p>
+                  <b>Abstract:</b> Scaling robotic manipulation demands predictive models of how the world evolves
+                  under action and scalable sources of diverse training data. In this talk, I will present structured
+                  world models that incorporate physical priors for planning and control across rigid, deformable,
+                  articulated, and granular objects. I will also introduce a real-to-sim-to-real framework that turns
+                  real-world observations into interactive digital twins for scalable data generation, policy training,
+                  and evaluation, laying the groundwork for more general and robust robotic foundation models.
+                </p>
+              </div>
+            </div>
+          </div>
           <article>
             <img src="assets/portraits/mike-rabbat.jpg" alt="Mike Rabbat" loading="lazy" />
             <h3><a href="https://ca.linkedin.com/in/michael-rabbat-66a00b7">Mike Rabbat</a></h3>
@@ -237,7 +271,25 @@
             </tr>
             <tr>
               <td class="time">10:40</td>
-              <td><b>Keynote Talk 3: Yunzhu Li</b> &mdash; 25 min + 5 min Q&amp;A</td>
+              <td>
+                <details class="talk-details">
+                  <summary>
+                    <span class="talk-summary">
+                      <b>Keynote Talk 3: Yunzhu Li</b> &mdash; 25 min + 5 min Q&amp;A
+                    </span>
+                    <span class="talk-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <h3 class="talk-title">Structured World Models as Scalable Data Engines for Robotics</h3>
+                  <p class="talk-abstract">
+                    <b>Abstract:</b> Scaling robotic manipulation demands predictive models of how the world evolves
+                    under action and scalable sources of diverse training data. In this talk, I will present structured
+                    world models that incorporate physical priors for planning and control across rigid, deformable,
+                    articulated, and granular objects. I will also introduce a real-to-sim-to-real framework that turns
+                    real-world observations into interactive digital twins for scalable data generation, policy training,
+                    and evaluation, laying the groundwork for more general and robust robotic foundation models.
+                  </p>
+                </details>
+              </td>
             </tr>
             <tr>
               <td class="time">11:10</td>

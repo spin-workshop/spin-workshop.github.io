@@ -1,5 +1,5 @@
 /* SPIN — CoRL 2026 Workshop
-   Plain static stylesheet. No build step, no framework, no JavaScript. */
+   Plain static stylesheet. No build step or framework. */
 
 :root {
   --bg: #f4f1ea;
@@ -215,7 +215,12 @@ figcaption {
 .speakers {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px 20px;
+  column-gap: 20px;
+  margin-bottom: -24px;
+}
+
+.speakers > article {
+  padding-bottom: 24px;
 }
 
 .speakers img,
@@ -262,6 +267,71 @@ figcaption {
   font-size: 0.85rem;
   font-style: italic;
   line-height: 1.45;
+}
+
+.speakers .speaker-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.speaker-talk-toggle {
+  flex-shrink: 0;
+  min-width: 32px;
+  min-height: 32px;
+  margin: -4px 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.speaker-talk-toggle:hover {
+  background: var(--alt);
+}
+
+.speaker-talk-toggle:focus-visible {
+  outline: 2px solid var(--dark);
+  outline-offset: 2px;
+}
+
+.speaker-talk-panel {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 280ms ease, opacity 280ms ease;
+}
+
+.speaker-talk-panel.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.speaker-talk-panel-content {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.speaker-talk-box {
+  margin-bottom: 24px;
+  padding: 20px 24px;
+  border: 1px solid var(--line);
+  background: var(--alt);
+  font-size: 0.95rem;
+}
+
+.speaker-talk-byline {
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.speaker-talk-box h3 {
+  margin: 0 0 12px;
 }
 
 /* Names link to personal pages; keep them reading as names, not as links. */
@@ -396,6 +466,52 @@ td.when {
   white-space: nowrap;
 }
 
+.talk-details summary {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.talk-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.talk-details summary:focus-visible {
+  outline: 2px solid var(--dark);
+  outline-offset: 4px;
+}
+
+.talk-summary {
+  min-width: 0;
+}
+
+.talk-title {
+  margin: 12px 0 0;
+  font-size: inherit;
+}
+
+.talk-toggle {
+  flex-shrink: 0;
+  padding: 0 4px;
+  font-weight: 700;
+}
+
+.talk-toggle::before {
+  content: "[+]";
+}
+
+.talk-details[open] .talk-toggle::before,
+.speaker-talk-toggle[aria-expanded="true"] .talk-toggle::before {
+  content: "[−]";
+}
+
+.talk-abstract {
+  margin-top: 8px;
+}
+
 /* Footer ----------------------------------------------------------------- */
 
 footer {
@@ -438,5 +554,9 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .speaker-talk-panel {
+    transition: none;
   }
 }
