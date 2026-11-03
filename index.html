@@ -18,8 +18,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="favicon.svg?v=grasp-1" type="image/svg+xml" sizes="any" />
     <!-- Bump both asset versions when styles or scripts change to avoid stale GitHub Pages caches. -->
-    <link rel="stylesheet" href="styles.css?v=20261101-1" />
-    <script src="speaker-talks.js?v=20261101-1" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261101-3" />
+    <script src="speaker-talks.js?v=20261101-3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#overview">Skip to content</a>
@@ -171,11 +171,48 @@
         <div class="speakers">
           <article>
             <img src="assets/portraits/georgia-chalvatzaki.jpg" alt="Georgia Chalvatzaki" loading="lazy" />
-            <h3><a href="https://www.ias.informatik.tu-darmstadt.de/Team/GeorgiaChalvatzaki">Georgia Chalvatzaki</a></h3>
+            <h3 class="speaker-name">
+              <a href="https://www.ias.informatik.tu-darmstadt.de/Team/GeorgiaChalvatzaki">Georgia Chalvatzaki</a>
+              <button
+                class="speaker-talk-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="georgia-chalvatzaki-abstract"
+                aria-label="Talk details for Georgia Chalvatzaki"
+              >
+                <span class="talk-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
             <p class="aff">TU Darmstadt</p>
             <p class="status">Speaker</p>
-            <p class="talk">Talk title to be announced</p>
+            <p class="talk">The Evolving Role of Structure in Physical Intelligence</p>
           </article>
+          <div
+            class="speaker-talk-panel"
+            id="georgia-chalvatzaki-abstract"
+            role="region"
+            aria-labelledby="georgia-chalvatzaki-talk-title"
+            inert
+          >
+            <div class="speaker-talk-panel-content">
+              <div class="speaker-talk-box">
+                <p class="speaker-talk-byline">Georgia Chalvatzaki</p>
+                <h3 id="georgia-chalvatzaki-talk-title">The Evolving Role of Structure in Physical Intelligence</h3>
+                <p>
+                  <b>Abstract:</b> Scaling data and model capacity has expanded the capabilities of robot learning, but
+                  robust sensorimotor behavior remains difficult to acquire. In this talk, I will discuss how the role
+                  of structure is evolving as robots increasingly rely on pretrained models. As these models supply
+                  more of the representation, structure extends beyond the architecture of a policy or model. It also
+                  shapes what a robot observes, what its representations preserve, and how it learns from interaction.
+                  Drawing on our work in robotic manipulation, I will examine how geometric and semantic priors
+                  complement learned representations and physical feedback. The discussion will focus on how these
+                  design choices affect data efficiency, generalization, and adaptation, and on what can be built in,
+                  what can be inherited from pretrained models, and what must still be learned or measured through
+                  physical interaction.
+                </p>
+              </div>
+            </div>
+          </div>
           <article>
             <img src="assets/portraits/jeannette-bohg.jpg" alt="Jeannette Bohg" loading="lazy" />
             <h3><a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a></h3>
@@ -250,15 +287,47 @@
         <p class="note">
           Morning half-day schedule, in person, 8:30 AM&ndash;12:30 PM.
         </p>
+        <div class="schedule-controls" hidden>
+          <button
+            class="schedule-talks-toggle"
+            type="button"
+            aria-controls="schedule-georgia-talk schedule-yunzhu-talk"
+            aria-expanded="false"
+          >
+            Expand all talks
+          </button>
+        </div>
         <table>
           <tbody>
             <tr>
               <td class="time">8:30</td>
-              <td><b>Welcome</b> &mdash; opening remarks, tasks and rules (10 min)</td>
+              <td><b>Welcome</b> &mdash; 10 min</td>
             </tr>
             <tr>
               <td class="time">8:40</td>
-              <td><b>Keynote Talk 1: Georgia Chalvatzaki</b> &mdash; 25 min + 5 min Q&amp;A</td>
+              <td>
+                <details class="talk-details" id="schedule-georgia-talk">
+                  <summary>
+                    <span class="talk-summary">
+                      <b>Keynote Talk 1: Georgia Chalvatzaki</b> &mdash; 25 min + 5 min Q&amp;A
+                    </span>
+                    <span class="talk-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <h3 class="talk-title">The Evolving Role of Structure in Physical Intelligence</h3>
+                  <p class="talk-abstract">
+                    <b>Abstract:</b> Scaling data and model capacity has expanded the capabilities of robot learning,
+                    but robust sensorimotor behavior remains difficult to acquire. In this talk, I will discuss how the
+                    role of structure is evolving as robots increasingly rely on pretrained models. As these models
+                    supply more of the representation, structure extends beyond the architecture of a policy or model.
+                    It also shapes what a robot observes, what its representations preserve, and how it learns from
+                    interaction. Drawing on our work in robotic manipulation, I will examine how geometric and
+                    semantic priors complement learned representations and physical feedback. The discussion will
+                    focus on how these design choices affect data efficiency, generalization, and adaptation, and on
+                    what can be built in, what can be inherited from pretrained models, and what must still be learned
+                    or measured through physical interaction.
+                  </p>
+                </details>
+              </td>
             </tr>
             <tr>
               <td class="time">9:10</td>
@@ -273,7 +342,7 @@
             <tr>
               <td class="time">10:40</td>
               <td>
-                <details class="talk-details">
+                <details class="talk-details" id="schedule-yunzhu-talk">
                   <summary>
                     <span class="talk-summary">
                       <b>Keynote Talk 3: Yunzhu Li</b> &mdash; 25 min + 5 min Q&amp;A

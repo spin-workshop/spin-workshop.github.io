@@ -466,6 +466,30 @@ td.when {
   white-space: nowrap;
 }
 
+.schedule-controls {
+  margin-bottom: 12px;
+  text-align: right;
+}
+
+.schedule-talks-toggle {
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.schedule-talks-toggle:hover {
+  background: var(--alt);
+}
+
+.schedule-talks-toggle:focus-visible {
+  outline: 2px solid var(--dark);
+  outline-offset: 2px;
+}
+
 .talk-details summary {
   display: flex;
   align-items: flex-start;
@@ -486,6 +510,11 @@ td.when {
 
 .talk-summary {
   min-width: 0;
+}
+
+/* Keep short speaker names legible across Helvetica font substitutions. */
+.talk-summary b {
+  font-family: system-ui, sans-serif;
 }
 
 .talk-title {
