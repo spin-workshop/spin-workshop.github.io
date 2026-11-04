@@ -215,11 +215,50 @@
           </div>
           <article>
             <img src="assets/portraits/jeannette-bohg.jpg" alt="Jeannette Bohg" loading="lazy" />
-            <h3><a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a></h3>
+            <h3 class="speaker-name">
+              <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a>
+              <button
+                class="speaker-talk-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="jeannette-bohg-abstract"
+                aria-label="Talk details for Jeannette Bohg"
+              >
+                <span class="talk-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
             <p class="aff">Stanford University</p>
             <p class="status">Speaker &amp; panelist</p>
-            <p class="talk">Talk title to be announced</p>
+            <p class="talk">Learning by Trying: Physical Reasoning from Puzzles to Contact</p>
           </article>
+          <div
+            class="speaker-talk-panel"
+            id="jeannette-bohg-abstract"
+            role="region"
+            aria-labelledby="jeannette-bohg-talk-title"
+            inert
+          >
+            <div class="speaker-talk-panel-content">
+              <div class="speaker-talk-box">
+                <p class="speaker-talk-byline">Jeannette Bohg</p>
+                <h3 id="jeannette-bohg-talk-title">Learning by Trying: Physical Reasoning from Puzzles to Contact</h3>
+                <p>
+                  <b>Abstract:</b> How much of physical intelligence must be built in, and how much can emerge from
+                  scale? In this talk, I will examine this question through three settings that share one requirement:
+                  the agent must act to find out. First, physical puzzles: Causal-PIK uses an explicit physics-informed
+                  prior to choose informative next trials and can outperform human solvers. Yet a frontier foundation
+                  model that observes only pixels now matches or exceeds human performance on some of the same
+                  puzzles under an equal attempt budget. Second, robots: The benchmark RoboARCade lets a foundation
+                  model control a robot directly, so we can observe how it explores, fails, revises its plan, and tries
+                  again, much like a solver working through a physical puzzle. Third, contact: The benchmark
+                  ContactBench includes objects that look identical but demand different behavior, so success depends
+                  on sensing contact during interaction. Data may eventually close this gap, but today there is
+                  neither a clear interface between foundation models and contact sensing nor enough data to learn
+                  one. Until then, structure is what bridges it.
+                </p>
+              </div>
+            </div>
+          </div>
           <article>
             <img src="assets/portraits/yunzhu-li.jpg" alt="Yunzhu Li" loading="lazy" />
             <h3 class="speaker-name">
@@ -291,7 +330,7 @@
           <button
             class="schedule-talks-toggle"
             type="button"
-            aria-controls="schedule-georgia-talk schedule-yunzhu-talk"
+            aria-controls="schedule-georgia-talk schedule-jeannette-talk schedule-yunzhu-talk"
             aria-expanded="false"
           >
             Expand all talks
@@ -331,7 +370,31 @@
             </tr>
             <tr>
               <td class="time">9:10</td>
-              <td><b>Keynote Talk 2: Jeannette Bohg</b> &mdash; 25 min + 5 min Q&amp;A</td>
+              <td>
+                <details class="talk-details" id="schedule-jeannette-talk">
+                  <summary>
+                    <span class="talk-summary">
+                      <b>Keynote Talk 2: Jeannette Bohg</b> &mdash; 25 min + 5 min Q&amp;A
+                    </span>
+                    <span class="talk-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <h3 class="talk-title">Learning by Trying: Physical Reasoning from Puzzles to Contact</h3>
+                  <p class="talk-abstract">
+                    <b>Abstract:</b> How much of physical intelligence must be built in, and how much can emerge from
+                    scale? In this talk, I will examine this question through three settings that share one requirement:
+                    the agent must act to find out. First, physical puzzles: Causal-PIK uses an explicit physics-informed
+                    prior to choose informative next trials and can outperform human solvers. Yet a frontier foundation
+                    model that observes only pixels now matches or exceeds human performance on some of the same
+                    puzzles under an equal attempt budget. Second, robots: The benchmark RoboARCade lets a foundation
+                    model control a robot directly, so we can observe how it explores, fails, revises its plan, and tries
+                    again, much like a solver working through a physical puzzle. Third, contact: The benchmark
+                    ContactBench includes objects that look identical but demand different behavior, so success depends
+                    on sensing contact during interaction. Data may eventually close this gap, but today there is
+                    neither a clear interface between foundation models and contact sensing nor enough data to learn
+                    one. Until then, structure is what bridges it.
+                  </p>
+                </details>
+              </td>
             </tr>
             <tr>
               <td class="time">9:40</td>
@@ -473,7 +536,7 @@
             <img src="assets/portraits/anthony-liang.jpg" alt="Anthony Liang" loading="lazy" />
             <div>
               <strong><a href="https://aliang8.github.io/">Anthony Liang</a></strong>
-              <span>TRI</span>
+              <span>Toyota Research Institute</span>
               <span class="role">Program chair</span>
             </div>
           </article>
